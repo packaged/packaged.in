@@ -1,0 +1,86 @@
+<div class="intro">
+  <div class="block">
+    <a href="/">
+      <img src="<?php echo \Packaged\Dispatch\AssetManager::assetType()
+        ->getResourceUri("/img/logo.png"); ?>" alt="Packaged Logo"/>
+    </a>
+
+    <h1>Packaged is an open source provider for packages developed to work with
+        highly scalable php projects</h1>
+
+    <ul>
+      <li>We test and run our packaged in very high traffic environments</li>
+      <li>We distribute code via <a href="https://packagist.org/packages/packaged/">Packagist</a>
+          with <a href="http://getcomposer.org/">Composer</a>.
+      </li>
+      <li>We host all our code on <a href="http://github.com/packaged">Github</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="packages">
+  <div class="block">
+    <h2>Our Packages</h2><a name="Packages"></a>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id itaque
+    minus suscipit? Aperiam architecto consectetur, cum eveniet id labore
+    mollitia quisquam repellat repudiandae sed vero vitae voluptate
+    voluptatibus. Eum.
+
+    <ul class="package-list">
+      <li class="headers">
+        <div class="package-name">Package</div>
+        <div class="package-desc">Description</div>
+        <div class="package-link">Links</div>
+      </li>
+      <?php for($i = 0; $i < 5; $i++)
+      {
+        ?>
+        <li>
+          <div class="package-name">Dispatch</div>
+          <div class="package-desc">Static asset management for your sites</div>
+          <div class="package-link">
+            <a href="http://github.com/packaged/dispatch"
+               onclick="window.open(this.href); return false;">
+              <img src="<?php echo \Packaged\Dispatch\AssetManager::assetType()
+                ->getResourceUri("/img/github/Github-Mark-32px.png"); ?>"
+                   alt="Github"/>
+            </a>
+            <a href="/packaged/dispatch/docs">
+              <img src="<?php echo \Packaged\Dispatch\AssetManager::assetType()
+                ->getResourceUri("/img/readme.png"); ?>"
+                   alt="Documentation"/>
+            </a>
+          </div>
+        </li>
+      <?php } ?>
+    </ul>
+  </div>
+</div>
+
+<div class="quality">
+  <div class="block">
+    <h2>Code Quality</h2>
+
+    <div class="row">
+      <div class="col-md-7">
+        <p>We take code quality, reusability and stability very seriously.</p>
+      </div>
+      <div class="col-md-5">
+        <ol>
+          <li>We follow PSR-1 AND PSR-4 Standards</li>
+          <li>We aim for 100% code coverage in releases</li>
+          <li>All code is tested with Travis and Sidekick</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="block">
+    <h2>Design</h2>
+
+    <p>This design is based on <a href="http://thephpleague.com/">thephpleague.com</a>
+       until our designers get around to creating a new theme.</p>
+  </div>
+</div>

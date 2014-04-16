@@ -1,4 +1,4 @@
-packaged.in
-===========
+Packaged Website
+========
 
-Public Website
+This is the repository for the http://packaged.in site

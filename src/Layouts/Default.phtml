@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Packaged : Open Source PHP Packages</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <?php
+  $sheets = (array)\Packaged\Dispatch\AssetManager::getUrisByType('css');
+  foreach($sheets as $css => $opt)
+  {
+    echo '<link rel="stylesheet" href="' . $css . '">';
+  }
+  ?>
+</head>
+<body>
+<div class="nav">
+  <div class="block">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#Packages">Our Packages</a></li>
+    </ul>
+  </div>
+</div>
+<?php echo $this->content(); ?>
+</body>
+</html>

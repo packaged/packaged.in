@@ -1,0 +1,38 @@
+body {
+  text-align:  center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.block {
+  max-width: 1000px;
+  margin:    0 auto;
+}
+
+h1, h2, h3 {
+  font-family:            Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight:            normal;
+  margin:                 0 auto 15px auto;
+}
+
+h1 {
+  font-size:   30px;
+  line-height: 136%;
+  max-width:   700px;
+}
+
+h2 {
+  font-size:      50px;
+  line-height:    100%;
+  text-transform: uppercase;
+}
+
+.nav {
+  background: #6abcdd;
+  text-align: right;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
